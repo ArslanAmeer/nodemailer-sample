@@ -7,8 +7,8 @@ const PORT = 3000;
 const smtpTransport = nodemailer.createTransport({
 	service: 'Gmail',
 	auth: {
-		user: 'toolbox.guyana@gmail.com',
-		pass: 'toolboxpassword',
+		user: '<YOUR_EMAIL>',
+		pass: '<YOUR_PASSWORD>',
 	},
 	tls: {
 		rejectUnauthorized: false,
@@ -16,8 +16,8 @@ const smtpTransport = nodemailer.createTransport({
 });
 
 const mailOptions = {
-	from: 'toolbox.guyana@gmail.com',
-	to: 'thelegend_2712@hotmail.com',
+	from: '<YOUR_EMAIL>',
+	to: 'email@arslanameer.com',
 	subject: 'Welcome to ',
 	text: 'Sample text',
 };
